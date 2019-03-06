@@ -19,7 +19,7 @@ def read(*names, **kwargs):
 
 setup(
     name="nose-html-reporting",
-    version="0.2.2",
+    version="0.2.3",
     license="BSD",
     description="Nose plugin that generates a nice html test report with ability of using template "
                 "based on jinja2 templates from any folder.",
@@ -27,9 +27,6 @@ setup(
     author="Ivan Lysenko",
     author_email="lysenko_i@mail.ru",
     url="https://github.com/lysenkoivan/nose-html-reporting",
-    packages=find_packages("src"),
-    package_dir={"": "src"},
-    py_modules=[splitext(basename(i))[0] for i in glob.glob("src/*.py")],
     include_package_data=True,
     zip_safe=False,
     classifiers=[
