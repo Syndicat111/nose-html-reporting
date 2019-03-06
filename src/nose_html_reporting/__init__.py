@@ -222,6 +222,7 @@ class HtmlReport(Plugin):
         self.report_file.write(self.jinja.get_template(os.path.basename(self.report_template_filename)).render(
             report=self.report_data,
             stats=self.stats,
+            start_time=self.test_start_time,
             rawoutput=self._format_output(self.complete_global_output())
         ))
         self.report_file.close()
